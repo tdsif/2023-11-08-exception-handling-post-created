@@ -1,0 +1,26 @@
+
+POST http://localhost:8080/api/v1/alunos
+Content-Type: application/json
+
+{
+  "nome": "Luiz Sebastião (vulgo: Joca)",
+  "cpf": "98765432127",
+  "password": "asdf"
+}
+
+### TODOS
+
+GET http://localhost:8080/api/v1/alunos
+
+### UM ALUNO
+
+GET http://localhost:8080/api/v1/alunos/3
+
+
+### UM ALUNO QUE NÃO EXISTE
+
+GET http://localhost:8080/api/v1/alunos/1111
+
+### ERRO
+
+GET http://localhost:8080/api/v1/alunos/erro
